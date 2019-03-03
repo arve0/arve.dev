@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(232, 232, 232);
+  color: #333;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2 {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+h1 {
+  color: rgb(85, 85, 85);
+  font-weight: 500;
+}
+h2 {
+  color: rgb(100, 100, 100);
+  font-weight: 400;
+}
+h3 {
+  color: rgb(100, 100, 100);
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+.undertittel {
+  color: rgb(150, 150, 150);
+  margin-top: 0;
+}
+p {
+  line-height: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+p:last-child {
+  margin-bottom: 0em;
+}
+li {
+  margin-top: 0.5em;
+}
+body > * {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+}
+.kort {
+  background-color: #fff;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 0.2em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.kort:hover {
+  box-shadow: 0 3px 9px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+.kort > * {
+  overflow-x: hidden;
+}
+#meg .kort {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 200px 1fr;
+  justify-content: left;
+  column-gap: 1.5em;
+}
+#meg img {
+  width: 200px;
+  border-radius: 50%;
+}
+.kolonner {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  margin-top: 1em;
+  column-gap: 2em;
+}
+@media only screen and (max-width: 768px) {
+  .kolonner {
+    grid-auto-flow: row;
+  }
+  h3 {
+    margin-bottom: 0em;
+  }
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr:nth-child(2n+1) {
+  background-color: rgb(240, 255, 240);
+}
+th, td {
+  padding: 1em;
+}
+th {
+  text-align: left;
+  white-space: nowrap;
+}
