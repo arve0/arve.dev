@@ -107,6 +107,12 @@ tr:nth-child(2n+1) {
 th, td {
   padding: 1em;
 }
+@media only screen and (max-width: 700px) {
+  th, td {
+    padding: 0.5em;
+    font-size: 0.9em;
+  }
+}
 th {
   text-align: left;
   white-space: nowrap;
