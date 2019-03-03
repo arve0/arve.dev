@@ -63,7 +63,7 @@ body > * {
   grid-template-columns: 200px 1fr;
   justify-content: left;
   column-gap: 1.5em;
-  max-width: 650px;
+  max-width: 580px;
 }
 #meg img {
   width: 200px;
