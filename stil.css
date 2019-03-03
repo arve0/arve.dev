@@ -79,6 +79,11 @@ body > * {
     width: 50%;
   }
 }
+@media only screen and (max-width: 768px) {
+  #meg .kort {
+    max-width: 435;
+  }
+}
 .kolonner {
   display: grid;
   grid-auto-flow: column;
