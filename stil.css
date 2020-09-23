@@ -17,6 +17,11 @@ h2 {
   color: rgb(100, 100, 100);
   font-weight: 400;
 }
+h2 small {
+  color: rgb(150, 150, 150);
+  font-size: 70%;
+  float: right;
+}
 h3 {
   color: rgb(100, 100, 100);
   text-transform: uppercase;
@@ -43,7 +48,7 @@ li {
   margin-top: 0.5em;
 }
 body > * {
-  max-width: 80%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3em;
